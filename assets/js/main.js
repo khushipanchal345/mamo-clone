@@ -71,3 +71,136 @@
   }, true)
 
 })()
+
+
+
+
+
+
+function abc()
+{
+
+   /*======Name validation*/
+var name;
+name=window.document.frm.name.value;
+var thanks_msg=0;
+
+name=name.toUpperCase();
+var x=name.length;
+var ch;
+var count=0;
+  for(var i=0; i<=x-1; i++)
+  {
+     ch=name.charAt(i);
+     if(ch>= "A" && ch<= "z" || ch==" ")
+     {
+      count++;
+     }
+  }
+   if(count==x)
+   {
+      thanks_msg=1;
+   }
+   
+   if(count!=x)
+   {
+      alert("Invalid Name");
+   }
+
+   if(name=="")
+   {
+      alert("Please First Enter The Name ");
+   }
+   
+   /*======Email validation*/
+   var email;
+   email=window.document.frm.email.value;
+   var n=email.length;
+   var x=email.substr(n-10,10);
+   if(x=="@gmail.com" || x=="@yahoo.com")
+   {
+      thanks_msg=5;
+   }
+   else
+   {
+      if(email=="")
+      {
+         alert("Please Enter Your E-mail");
+      }
+      else
+      {
+         alert("Invalid E-mail")
+      }
+   }
+   
+
+
+
+   /*=============subject validation=============*/
+var subject;
+subject=window.document.frm.subject.value;
+
+subject=subject.toUpperCase();
+var x=subject.length;
+var chs;
+var count=0;
+  for(var i=0; i<=x-1; i++)
+  {
+     chs=subject.charAt(i);
+     if(chs>= "A" && chs<= "z" || chs==" " || chs=="_" || chs=="-")
+     {
+      count++;
+     }
+  }
+   if(count==x)
+   {
+      thanks_msg=4;
+   }
+   
+   if(count!=x)
+   {
+      alert("Invalid Subject");
+   }
+
+   if(subject=="")
+   {
+      alert("Please Enter The Subject ");
+   }
+
+/* ==============message validation======= */
+var message;
+message=window.document.frm.message.value;
+
+message=message.toUpperCase();
+var y=message.length;
+var chs;
+var count=0;
+  for(var i=0; i<=y-1; i++)
+  {
+     chs=message.charAt(i);
+     if(chs>= "A" && chs<= "z" || chs==" " || chs=="_" || chs=="-")
+     {
+      count++;
+     }
+  }
+   if(count==y)
+   {
+      thanks_msg=3;
+   }
+   
+   if(count!=y)
+   {
+      alert("Invalid Message");
+   }
+
+   if(message=="")
+   {
+      alert("Please Enter The Message ");
+   }
+   
+   if(count++)
+   {
+      alert("Sent Sucessfully");
+      alert("THANK YOU "+name);     
+   }
+}
