@@ -657,7 +657,7 @@ section {
 }
 
 footer {
-  background-color: #ADB3BC;
+  
   color: #111;
   padding: 20px 0;
   margin-top: auto;
@@ -690,7 +690,7 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: #111;
   text-decoration: none;
 }
 
