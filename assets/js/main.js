@@ -204,3 +204,72 @@ var count=0;
       alert("THANK YOU "+name);     
    }
 }
+
+
+
+
+
+
+
+function xyz()
+{
+
+   /*======Name validation*/
+var name;
+name=window.document.frm1.name.value;
+var thanks_msg=0;
+
+name=name.toUpperCase();
+var x=name.length;
+var ch;
+var count=0;
+  for(var i=0; i<=x-1; i++)
+  {
+     ch=name.charAt(i);
+     if(ch>= "A" && ch<= "z" || ch==" ")
+     {
+      count++;
+     }
+  }
+   if(count==x)
+   {
+      thanks_msg=1;
+   }
+   
+   if(count!=x)
+   {
+      alert("Invalid Name");
+   }
+
+   if(name=="")
+   {
+      alert("Please First Enter The Name!");
+   }
+   
+   /*======Email validation*/
+   var email;
+   email=window.document.frm1.email.value;
+   var n=email.length;
+   var x=email.substr(n-10,10);
+   if(x=="@gmail.com" || x=="@yahoo.com")
+   {
+      thanks_msg=5;
+   }
+   else
+   {
+      if(email=="")
+      {
+         alert("Enter Your E-mail");
+      }
+      else
+      {
+         alert("Invalid E-mail")
+      }
+   }
+   
+   if(count++)
+   {
+      alert("Sent Sucessfully");
+      alert("THANK YOU "+name);     
+   }
+}
