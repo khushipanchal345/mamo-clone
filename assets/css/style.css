@@ -303,7 +303,7 @@ h6,
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -455,7 +455,7 @@ section {
   color : #fd680e;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .why-us {
     background-attachment: scroll;
   }
@@ -630,7 +630,7 @@ section {
   background: #ffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact .social-links {
     text-align: center;
   }

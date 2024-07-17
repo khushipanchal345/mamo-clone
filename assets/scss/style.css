@@ -641,13 +641,13 @@ section {
   color: #fff;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
   #hero {
     background-attachment: fixed;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
   .why-us {
     background-attachment: scroll;
   }

@@ -826,3 +826,34 @@ section {
   margin-top: 6px;
   font-size: 13px;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  /* Styles for mobile devices */
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  /* Styles for tablets and small laptops */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* Styles for desktops */
+  body {
+    font-size: 18px;
+  }
+}
