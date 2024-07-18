@@ -75,9 +75,12 @@
  
  
  
+ document.getElementById('burgerMenu').addEventListener('click', function() {
+   document.getElementById('navLinks').classList.toggle('active');
+ });
 
 
- 
+
  
  
  function abc()
