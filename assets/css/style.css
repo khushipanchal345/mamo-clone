@@ -82,7 +82,8 @@ h6,
 .fixed-header
 {
   position: fixed;
-  
+  top: auto;
+  right: auto;
   width: 50%;
   background-color: #111;
   z-index: 1000;
