@@ -79,15 +79,6 @@ h6,
 # Navigation Menu
 --------------------------------------------------------------*/
 
-.fixed-header
-{
-  position: fixed;
-  width: 50%;
-  background-color: #111;
-  z-index: 1000;
-  top: 50;
-  right: 20;
-}
 
 
 nav {
