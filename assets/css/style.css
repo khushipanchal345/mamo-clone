@@ -84,11 +84,10 @@ h6,
 .fixed-header
 {
   position: fixed;
-  width: 50%;
+  width: 100%;
   background-color: #111;
   z-index: 1000;
-  top: 50px;
-  right: 20px;
+  top: 0;
 }
 
 nav {
@@ -110,7 +109,7 @@ nav {
 }
 
 .nav-links li {
-  margin: 0 32px;
+  margin: 0 15px;
 }
 
 .nav-links a {
@@ -132,6 +131,10 @@ nav {
   margin: 4px 0;
 }
 
+.content
+{
+  margin-top: 60px;
+}
 /* Responsive */
 @media (max-width: 768px)
  {
