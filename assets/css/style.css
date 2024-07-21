@@ -81,26 +81,17 @@ h6,
 
 
   
-.fixed-header
-{
+.fixed-header {
   position: fixed;
+  top: 0;
   width: 100%;
-  background-color: #111;
-  z-index: 1000;
+  background-color: #333;
+  z-index: 1000; /* Ensure it stays on top */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 60px;
-  right: 15cm;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 60px;
+  height: 60px; /* Adjust height as needed */
 }
 
 .logo {
@@ -111,6 +102,8 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -136,18 +129,18 @@ nav {
   margin: 4px 0;
 }
 
-.content
-{
-  margin-top: 60px;
+/* Ensure content does not hide behind the fixed header */
+.content {
+  margin-top: 60px; /* Same height as the header */
 }
+
 /* Responsive */
-@media (max-width: 768px)
- {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
     position: absolute;
     top: 60px;
-    left: 0;
+    right: 0;
     width: 100%;
     flex-direction: column;
     background-color: #333;
