@@ -89,7 +89,7 @@ h6,
   z-index: 1000; /* Ensure it stays on top */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
   padding: 0 20px;
   height: 60px; /* Adjust height as needed */
 }
