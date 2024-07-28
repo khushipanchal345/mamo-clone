@@ -85,7 +85,7 @@ h6,
   position: fixed;
   top: 0;
   width: 100%;
-  
+  background-color: white;
   z-index: 1000; /* Ensure it stays on top */
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,7 @@ h6,
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 18px;
 }
